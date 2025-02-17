@@ -56,6 +56,7 @@ We evaluate models based on their ability to answer <i>both</i> questions correc
 | 9 | [BLIP-2](https://github.com/salesforce/LAVIS/tree/main/projects/blip2) | Opt 2.7B | 6.82 | 86.93 |
 | 10 | [Molmo](https://molmo.allenai.org/) | 72B-0924 | 6.82 | 85.80 |
 | 11 | [RadFM](https://github.com/chaoyi-wu/RadFM) | - | 5.68 | 85.80 |
+| 11 | [Janus Pro](https://huggingface.co/deepseek-ai/Janus-Pro-7B) | 7B | 4.55 | 92.05 |
 | 12 | [Med-Flamingo](https://github.com/snap-stanford/med-flamingo) | - | 4.55 | 98.30 |
 | 13 | [LLaVA-Med](https://github.com/microsoft/LLaVA-Med) | v1.5-Mistral 7B | 1.14 | 97.16 |
 
