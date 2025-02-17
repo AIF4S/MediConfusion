@@ -343,6 +343,30 @@ class GPTAnswering(BaseAnsweringModel):
             response_list.append(response)
         return response_list
     
+class DeepSeekAnswering(BaseAnsweringModel):
+
+    def set_model_params(self):
+        global deepseek
+        from Models import deepseek
+        self.key = 'deepseek'
+        args = super().set_model_params()
+        self.model_path = args.get("model_path")
+        self.max_new_tokens = args.get("max_new_tokens")
+        self.do_sample = args.get("do_sample")
+        self.model, self.processor, self.tokenizer = deepseek.load_model(self.model_path)
+        if self.mode in ['greedy', 'prefix']:
+            raise ValueError(f'Not implemented!')
+
+    def ask_question(self, question, options, image_list):
+        qs = super().ask_question(question, options, image_list)
+        response_list = []
+        for image in image_list:
+            response = deepseek.ask_question(self.model, self.processor, self.tokenizer, 
+                                             image, qs, self.temperature, self.max_new_tokens, 
+                                             self.do_sample)
+            response_list.append(response)
+        return response_list
+    
 class ClaudeAnswering(BaseAnsweringModel):
 
     def set_model_params(self):
@@ -373,7 +397,7 @@ class GeminiAnswering(BaseAnsweringModel):
         self.deployment_name = args.get("deployment_name")
         self.model = gemini.load_model(self.init_prompt, self.temperature, self.deployment_name)
         if self.mode in ['greedy', 'prefix']:
-            raise ValueError(f'Cannot use forward for Claude!')
+            raise ValueError(f'Cannot use forward for Gemini!')
 
     def ask_question(self, question, options, image_list):
         qs = super().ask_question(question, options, image_list)
@@ -704,6 +728,7 @@ class MedVInTAnswering(BaseAnsweringModel):
         return response_list
 ANSWERING_CLASS_DICT = {
     'gpt': GPTAnswering,
+    'deepseek': DeepSeekAnswering,
     'claude': ClaudeAnswering,
     'gemini': GeminiAnswering,
     'llava_med': LLaVAMedAnswering,
@@ -719,6 +744,7 @@ ANSWERING_CLASS_DICT = {
 
 DEFAULT_MODEL_CONFIGS = {
     'gpt': f'{ROOT}/configs/Models/gpt/vanilla.json',
+    'deepseek': f'{ROOT}/configs/Models/deepseek/vanilla.json',
     'claude': f'{ROOT}/configs/Models/claude/vanilla.json',
     'gemini': f'{ROOT}/configs/Models/gemini/vanilla.json',
     'llava_med': f'{ROOT}/configs/Models/llava_med/vanilla.json',

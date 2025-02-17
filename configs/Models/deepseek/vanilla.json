@@ -1,0 +1,7 @@
+{
+    "model_path": "deepseek-ai/Janus-Pro-7B",
+    "temperature": 0.7,
+    "init_prompt_id": 1,
+    "max_new_tokens": 512,
+    "do_sample": false
+}

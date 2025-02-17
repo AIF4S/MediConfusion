@@ -14,6 +14,7 @@
             "default": "Based on the image, choose the correct option for the following question.\nQuestion: {}\n(\"A\": {})\n(\"B\": {})\nAnswer with the option's letter from the given choices directly. Your answer should be just one letter.\n#answer: (\"",
             "llava_med": "Based on the image, choose the correct option for the following question.\nQuestion: {}\nA: {}\nB: {}\nAnswer with the option's letter from the given choices directly. Your answer should be just one letter.\nAnswer: ",
             "gpt": "Based on the image, choose the correct option for the following question.\nQuestion: {}\nA: {}\nB: {}\nAnswer with the option's letter from the given choices directly. Your answer should be just one letter.\nAnswer: ",
+            "deepseek": "Based on the image, choose the correct option for the following question.\nQuestion: {}\nA: {}\nB: {}\nAnswer with the option's letter from the given choices directly. Your answer should be just one letter.\nAnswer: ",
             "gemini": "Based on the image, choose the correct option for the following question.\nQuestion: {}\nA: {}\nB: {}\nAnswer with the option's letter from the given choices directly. Your answer should be just one letter.\nAnswer: ",
             "claude": "Based on the image, choose the correct option for the following question.\nQuestion: {}\nA: {}\nB: {}\nAnswer with the option's letter from the given choices directly. Your answer should be just one letter.\nAnswer: ",
             "medvint": "Question: {} The choices are: A: {} B: {} The Answer is: ",
