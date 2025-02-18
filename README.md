@@ -45,21 +45,23 @@ We evaluate models based on their ability to answer <i>both</i> questions correc
 
 | Rank | Model | Version | Set acc. (%) | Confusion (%) |
 | :--: | :--: | :--: | :--: |  :--: |
-| 🏅️ | **Random Guessing** | - | **25.00** | 50.00 |
-| 🥈 | **[Gemini](https://deepmind.google/technologies/gemini/pro/)** | 1.5 Pro | 19.89 | 58.52 |
-| 🥉 | **[GPT](https://openai.com/index/hello-gpt-4o/)** | 4o (release 20240513) | 18.75 | 75.00 |
-| 4 | [Deepseek VL2](https://github.com/deepseek-ai/DeepSeek-VL2) | - | 15.91 | 77.19 |
-| 5 | [Llama 3.2](https://www.llama.com/) | 90B-Vision-Instruct | 15.34 | 78.41 |
-| 6 | [InstructBLIP](https://github.com/salesforce/LAVIS/tree/main/projects/instructblip) | Vicuna 7B | 12.50 | 80.35 | 
-| 7 | [Molmo](https://molmo.allenai.org/) | 7B-D-0924 | 9.66 | 86.21 |
-| 8 | [LLaVA](https://huggingface.co/llava-hf/llava-v1.6-mistral-7b-hf) | v1.6-Mistral 7B | 9.09 | 85.80 |
-| 9 | [Claude](https://claude.ai/new) | 3 Opus | 8.52 | 84.09 |
-| 10 | [BLIP-2](https://github.com/salesforce/LAVIS/tree/main/projects/blip2) | Opt 2.7B | 6.82 | 86.93 |
-| 11 | [Molmo](https://molmo.allenai.org/) | 72B-0924 | 6.82 | 85.80 |
-| 12 | [RadFM](https://github.com/chaoyi-wu/RadFM) | - | 5.68 | 85.80 |
-| 13 | [Janus](https://github.com/deepseek-ai/Janus) | Pro 7B | 4.55 | 92.05 |
-| 14 | [Med-Flamingo](https://github.com/snap-stanford/med-flamingo) | - | 4.55 | 98.30 |
-| 15 | [LLaVA-Med](https://github.com/microsoft/LLaVA-Med) | v1.5-Mistral 7B | 1.14 | 97.16 |
+| 🏅️ | **[Gemini](https://deepmind.google/technologies/gemini/pro/)** | 2.0 Pro | **28.41** | 67.05 |
+| 🥈 | **Random Guessing** | - | **25.00** | 50.00 |
+| 🥉 | **[GPT](https://openai.com/index/learning-to-reason-with-llms/)** | o1 | 24.43 | 70.52 |
+| 4 | **[Gemini](https://deepmind.google/technologies/gemini/pro/)** | 1.5 Pro | 19.89 | 58.52 |
+| 5 | **[GPT](https://openai.com/index/hello-gpt-4o/)** | 4o (release 20240513) | 18.75 | 75.00 |
+| 6 | [Deepseek VL2](https://github.com/deepseek-ai/DeepSeek-VL2) | - | 15.91 | 77.19 |
+| 7 | [Llama 3.2](https://www.llama.com/) | 90B-Vision-Instruct | 15.34 | 78.41 |
+| 8 | [InstructBLIP](https://github.com/salesforce/LAVIS/tree/main/projects/instructblip) | Vicuna 7B | 12.50 | 80.35 | 
+| 9 | [Molmo](https://molmo.allenai.org/) | 7B-D-0924 | 9.66 | 86.21 |
+| 10 | [LLaVA](https://huggingface.co/llava-hf/llava-v1.6-mistral-7b-hf) | v1.6-Mistral 7B | 9.09 | 85.80 |
+| 11 | [Claude](https://claude.ai/new) | 3 Opus | 8.52 | 84.09 |
+| 12 | [BLIP-2](https://github.com/salesforce/LAVIS/tree/main/projects/blip2) | Opt 2.7B | 6.82 | 86.93 |
+| 13 | [Molmo](https://molmo.allenai.org/) | 72B-0924 | 6.82 | 85.80 |
+| 14 | [RadFM](https://github.com/chaoyi-wu/RadFM) | - | 5.68 | 85.80 |
+| 15 | [Janus](https://github.com/deepseek-ai/Janus) | Pro 7B | 4.55 | 92.05 |
+| 16 | [Med-Flamingo](https://github.com/snap-stanford/med-flamingo) | - | 4.55 | 98.30 |
+| 17 | [LLaVA-Med](https://github.com/microsoft/LLaVA-Med) | v1.5-Mistral 7B | 1.14 | 97.16 |
 
 </div>
 
