@@ -48,17 +48,18 @@ We evaluate models based on their ability to answer <i>both</i> questions correc
 | 🏅️ | **Random Guessing** | - | **25.00** | 50.00 |
 | 🥈 | **[Gemini](https://deepmind.google/technologies/gemini/pro/)** | 1.5 Pro | 19.89 | 58.52 |
 | 🥉 | **[GPT](https://openai.com/index/hello-gpt-4o/)** | 4o (release 20240513) | 18.75 | 75.00 |
-| 4 | [Llama 3.2](https://www.llama.com/) | 90B-Vision-Instruct | 15.34 | 78.41 |
-| 5 | [InstructBLIP](https://github.com/salesforce/LAVIS/tree/main/projects/instructblip) | Vicuna 7B | 12.50 | 80.35 | 
-| 6 | [Molmo](https://molmo.allenai.org/) | 7B-D-0924 | 9.66 | 86.21 |
-| 7 | [LLaVA](https://huggingface.co/llava-hf/llava-v1.6-mistral-7b-hf) | v1.6-Mistral 7B | 9.09 | 85.80 |
-| 8 | [Claude](https://claude.ai/new) | 3 Opus | 8.52 | 84.09 |
-| 9 | [BLIP-2](https://github.com/salesforce/LAVIS/tree/main/projects/blip2) | Opt 2.7B | 6.82 | 86.93 |
-| 10 | [Molmo](https://molmo.allenai.org/) | 72B-0924 | 6.82 | 85.80 |
-| 11 | [RadFM](https://github.com/chaoyi-wu/RadFM) | - | 5.68 | 85.80 |
-| 11 | [Janus Pro](https://huggingface.co/deepseek-ai/Janus-Pro-7B) | 7B | 4.55 | 92.05 |
-| 12 | [Med-Flamingo](https://github.com/snap-stanford/med-flamingo) | - | 4.55 | 98.30 |
-| 13 | [LLaVA-Med](https://github.com/microsoft/LLaVA-Med) | v1.5-Mistral 7B | 1.14 | 97.16 |
+| 4 | [Deepseek VL2](https://github.com/deepseek-ai/DeepSeek-VL2) | - | 15.91 | 77.19 |
+| 5 | [Llama 3.2](https://www.llama.com/) | 90B-Vision-Instruct | 15.34 | 78.41 |
+| 6 | [InstructBLIP](https://github.com/salesforce/LAVIS/tree/main/projects/instructblip) | Vicuna 7B | 12.50 | 80.35 | 
+| 7 | [Molmo](https://molmo.allenai.org/) | 7B-D-0924 | 9.66 | 86.21 |
+| 8 | [LLaVA](https://huggingface.co/llava-hf/llava-v1.6-mistral-7b-hf) | v1.6-Mistral 7B | 9.09 | 85.80 |
+| 9 | [Claude](https://claude.ai/new) | 3 Opus | 8.52 | 84.09 |
+| 10 | [BLIP-2](https://github.com/salesforce/LAVIS/tree/main/projects/blip2) | Opt 2.7B | 6.82 | 86.93 |
+| 11 | [Molmo](https://molmo.allenai.org/) | 72B-0924 | 6.82 | 85.80 |
+| 12 | [RadFM](https://github.com/chaoyi-wu/RadFM) | - | 5.68 | 85.80 |
+| 13 | [Janus](https://github.com/deepseek-ai/Janus) | Pro 7B | 4.55 | 92.05 |
+| 14 | [Med-Flamingo](https://github.com/snap-stanford/med-flamingo) | - | 4.55 | 98.30 |
+| 15 | [LLaVA-Med](https://github.com/microsoft/LLaVA-Med) | v1.5-Mistral 7B | 1.14 | 97.16 |
 
 </div>
 
@@ -116,6 +117,8 @@ The images can also be downloaded directly from [ROCO](https://github.com/razorx
 * `LLaMA`: Download the model from [here](https://huggingface.co/yahma/llama-7b-hf) and set `LLaMa_PATH` in the `MedFlamingo` [config](./configs/Models/med_flamingo/vanilla.json) to its folder.
 * `MedFlamingo`: Download the model from [here](https://huggingface.co/med-flamingo/med-flamingo) and set `CHECKPOINT_PATH` in the [config](./configs/Models/llava_med/vanilla.json) to its folder. 
 * `RadFM`: Download the model from [here](https://huggingface.co/chaoyi-wu/RadFM) and set `model_path` in the [config](./configs/Models/radfm/vanilla.json) to its folder.
+* `Deepseek VL2`: Follow the instalation from [here](https://github.com/deepseek-ai/DeepSeek-VL2).
+* `Deepseek Janus`: Follow instalation from [here](https://github.com/deepseek-ai/Janus).
 
 ### Proprietary Models
 To use proprietary models, save your API keys in the root directory of the repo in a file named `.env,` including the keys as in the example below.
