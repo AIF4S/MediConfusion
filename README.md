@@ -47,7 +47,7 @@ We evaluate models based on their ability to answer <i>both</i> questions correc
 | :--: | :--: | :--: | :--: |  :--: |
 | 🏅️ | **[Gemini](https://deepmind.google/technologies/gemini/pro/)** | 2.0 Pro | **28.41** | 67.05 |
 | 🥈 | **Random Guessing** | - | **25.00** | 50.00 |
-| 🥉 | **[GPT](https://openai.com/index/learning-to-reason-with-llms/)** | o1 | 24.43 | 70.52 |
+| 🥉 | **[GPT](https://openai.com/index/learning-to-reason-with-llms/)** | o1 (release 20241217) | 24.43 | 70.52 |
 | 4 | **[Gemini](https://deepmind.google/technologies/gemini/pro/)** | 1.5 Pro | 19.89 | 58.52 |
 | 5 | **[GPT](https://openai.com/index/hello-gpt-4o/)** | 4o (release 20240513) | 18.75 | 75.00 |
 | 6 | [Deepseek VL2](https://github.com/deepseek-ai/DeepSeek-VL2) | - | 15.91 | 77.19 |
