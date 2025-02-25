@@ -1,5 +1,6 @@
 {
     "temperature": 0.7,
     "deployment_name": "o1",
+    "api_version": "2025-01-01-preview",
     "init_prompt_id": 1
 }

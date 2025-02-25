@@ -331,6 +331,7 @@ class GPTAnswering(BaseAnsweringModel):
         self.key = 'gpt'
         args = super().set_model_params()
         self.deployment_name = args.get("deployment_name")
+        self.api_version = args.get("api_version")
         self.client = gpt.get_client()
         if self.mode in ['greedy', 'prefix']:
             raise ValueError(f'Cannot use forward for GPT!')
