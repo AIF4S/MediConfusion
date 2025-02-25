@@ -67,6 +67,7 @@ We evaluate models based on their ability to answer <i>both</i> questions correc
 
 ## Updates
 
+- [2025/02/18] _DeepSeek_ family added to the supported models.
 - [2024/09/11] _Molmo_ family added to the supported models.
 - [2024/03/11] _Llama 3.2_ family added to the supported models.
 
@@ -119,8 +120,8 @@ The images can also be downloaded directly from [ROCO](https://github.com/razorx
 * `LLaMA`: Download the model from [here](https://huggingface.co/yahma/llama-7b-hf) and set `LLaMa_PATH` in the `MedFlamingo` [config](./configs/Models/med_flamingo/vanilla.json) to its folder.
 * `MedFlamingo`: Download the model from [here](https://huggingface.co/med-flamingo/med-flamingo) and set `CHECKPOINT_PATH` in the [config](./configs/Models/llava_med/vanilla.json) to its folder. 
 * `RadFM`: Download the model from [here](https://huggingface.co/chaoyi-wu/RadFM) and set `model_path` in the [config](./configs/Models/radfm/vanilla.json) to its folder.
-* `Deepseek VL2`: Follow the instalation from [here](https://github.com/deepseek-ai/DeepSeek-VL2).
-* `Deepseek Janus`: Follow instalation from [here](https://github.com/deepseek-ai/Janus).
+* `DeepSeek VL2`: Follow the instalation from [here](https://github.com/deepseek-ai/DeepSeek-VL2).
+* `DeepSeek Janus`: Follow instalation from [here](https://github.com/deepseek-ai/Janus).
 
 ### Proprietary Models
 To use proprietary models, save your API keys in the root directory of the repo in a file named `.env,` including the keys as in the example below.
@@ -138,6 +139,7 @@ Different MLLMs need different versions of the `transformers` package. Please us
 * `MedFlamingo`: Use `transformers==4.44.2` and install `open-flamingo` package
 * `Gemini`: You need `python>=3.9`
 * `Other MLLMs`: Use `transformers==4.44.2` and `python>=3.8`
+* `DeepSeek`: Use `transformers==4.38.2`
 
 ## 🔰 Usage
 

@@ -103,10 +103,9 @@ def do_prefix_forward(model, problem, image, processor):
         with torch.inference_mode():
             out = model(**inputs)
             # shift by 1 compared to input
-            raise ValueError(out.logits.shape, answer_start, input_ids.size(1), answer_start_from_back)
+
             logits = out.logits[0, answer_start_from_back-1:answer_start_from_back-1+num_answer_tokens]
             probs = torch.nn.functional.softmax(logits, dim=-1)
-
             # Pick the probabilities corresponding to each of the answer tokens
             probs = torch.gather(probs, 1, torch.tensor(answer_tokens).to(device=device).unsqueeze(0))
             prefix_score = torch.prod(probs.pow(1/num_answer_tokens))

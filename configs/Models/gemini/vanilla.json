@@ -1,5 +1,5 @@
 {
     "temperature": 0.2,
-    "deployment_name": "gemini-1.5-pro",
+    "deployment_name": "gemini-2.0-flash",
     "init_prompt_id": 1
 }

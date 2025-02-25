@@ -354,16 +354,16 @@ class DeepSeekAnswering(BaseAnsweringModel):
         self.max_new_tokens = args.get("max_new_tokens")
         self.do_sample = args.get("do_sample")
         self.model, self.processor, self.tokenizer, self.janus = deepseek.load_model(self.model_path)
-        if self.mode in ['greedy', 'prefix']:
-            raise ValueError(f'Not implemented!')
+        # if self.mode in ['greedy', 'prefix']:
+        #     raise ValueError(f'Not implemented!')
 
     def ask_question(self, question, options, image_list):
         qs = super().ask_question(question, options, image_list)
         response_list = []
         for image in image_list:
             response = deepseek.ask_question(self.model, self.processor, self.tokenizer, 
-                                             image, qs, self.temperature, self.max_new_tokens, 
-                                             self.do_sample, self.janus)
+                                             image, qs, self.temperature, self.mode,
+                                             self.max_new_tokens, self.do_sample, self.janus)
             response_list.append(response)
         return response_list
     

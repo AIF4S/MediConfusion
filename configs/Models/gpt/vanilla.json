@@ -1,5 +1,5 @@
 {
     "temperature": 0.7,
-    "deployment_name": "gpt4o",
+    "deployment_name": "o1",
     "init_prompt_id": 1
 }
