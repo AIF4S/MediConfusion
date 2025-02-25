@@ -138,8 +138,9 @@ Different MLLMs need different versions of the `transformers` package. Please us
 * `RadFM`: Use `transformers==4.28.1`
 * `MedFlamingo`: Use `transformers==4.44.2` and install `open-flamingo` package
 * `Gemini`: You need `python>=3.9`
-* `Other MLLMs`: Use `transformers==4.44.2` and `python>=3.8`
+* `Molmo`: Use `transformers==4.45.2`
 * `DeepSeek`: Use `transformers==4.38.2`
+* `Other MLLMs`: Use `transformers==4.44.2` and `python>=3.8`
 
 ## 🔰 Usage
 
